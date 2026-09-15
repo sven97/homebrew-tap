@@ -5,21 +5,21 @@
 class Lazyleet < Formula
   desc "Practice LeetCode in the terminal, in your own editor"
   homepage "https://github.com/sven97/lazyleet"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sven97/lazyleet/releases/download/v0.1.3/lazyleet_0.1.3_darwin_amd64.tar.gz"
-      sha256 "c29f510bc16d8b2af3e579548803df248c37adacf8fc2f395948078234f631e3"
+      url "https://github.com/sven97/lazyleet/releases/download/v0.1.4/lazyleet_0.1.4_darwin_amd64.tar.gz"
+      sha256 "06bf4602498059adf9a78516a7d785a838ce24b668057b99ae71e36fe6f02a16"
 
       define_method(:install) do
         bin.install "lazyleet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sven97/lazyleet/releases/download/v0.1.3/lazyleet_0.1.3_darwin_arm64.tar.gz"
-      sha256 "042ddec3d3c7d8fe7d15be71a3cbafe7c34faf8cd875e06632647c76e59b64e6"
+      url "https://github.com/sven97/lazyleet/releases/download/v0.1.4/lazyleet_0.1.4_darwin_arm64.tar.gz"
+      sha256 "c69dc1dd33e5477985a647e5c1a9ba4516c74dec4db6cb9247f11c1294349763"
 
       define_method(:install) do
         bin.install "lazyleet"
@@ -29,15 +29,15 @@ class Lazyleet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sven97/lazyleet/releases/download/v0.1.3/lazyleet_0.1.3_linux_amd64.tar.gz"
-      sha256 "049d54067c4bd522e0d39ad7791f83655113bafa92ed844ca6a4438a9cbe7343"
+      url "https://github.com/sven97/lazyleet/releases/download/v0.1.4/lazyleet_0.1.4_linux_amd64.tar.gz"
+      sha256 "94288b6335232859801e7e15ac9b69eead6fc2d1f7e9ba80c5e7c812dab29f05"
       define_method(:install) do
         bin.install "lazyleet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sven97/lazyleet/releases/download/v0.1.3/lazyleet_0.1.3_linux_arm64.tar.gz"
-      sha256 "c82743ab378e212e7d5d75fc29115f6dc7fd3f0159e9faaf1ef3e7f6f900bc57"
+      url "https://github.com/sven97/lazyleet/releases/download/v0.1.4/lazyleet_0.1.4_linux_arm64.tar.gz"
+      sha256 "d8a9b8f1af6c33de48aea53d08a2c3785d2440e5a6686a19789c9f8161cf9199"
       define_method(:install) do
         bin.install "lazyleet"
       end
